@@ -98,7 +98,7 @@ assim que passarmos o mouse por cima */
     é facilmente colocada apenas com o comando url.*/
 footer {
     text-align: center;
-    background: url("bg.jpg");
+    background: url("./src/bg.jpg");
     padding: 40px 0;
 }
 /*Formatação básica de tamanho, cor e margem externa do texto do copyright.*/
