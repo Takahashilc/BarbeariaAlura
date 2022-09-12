@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> <!-- o meta charset serve para usar os caracteres e aparecerem certo diante de qlqr linguagem que esteja no sistema op. -->
+        <title>Produtos - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css"> <!-- Link de um arquivo que serve para limpar as medidas que são implementadas pelo proprio navegador -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Dentro do body nos temos o header para começar a nova página que será desenvolvida, dentro dela temos uma divisão para
+        que nao fique repetitivo varias divisões no CSS é feito com uma classe, temos um h1 que é uma imagem e também uma lista de 
+        itens que junto do comando nav isso o torna como um lugar de navegação da página, o código "a" serve para abrir um link aonde
+        está escrito o li. -->
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- No main temos a criação de uma lista de produtos que serão vendidos na loja da barbearia, do mesmo que jeito que foi 
+            feito no header temos uma lista, contendo em cada uma delas, uma foto, uma descrição e um preço. Temos apenas 1 classe 
+            criada que foi direto no "ul" que cria um lista nao ordenada, e também as classes para cada uns dos "p", o resto foi 
+            tudo feito no CSS para implementar a personalização.  -->
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="cabelo.jpg">
+                    <p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="produto-preco">R$ 25,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="barba.jpg">
+                    <p class="produto-descricao">Corte e desenho profissional de barba</p>
+                    <p class="produto-preco">R$ 18,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="cabelo+barba.jpg">
+                    <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produto-preco">R$ 35,00</p>
+                </li>
+            </ul>
+        </main>
+
+        <!-- No footer é algo mais básico, aqui temos apenas uma imagem e um paragrafo para a finalização da página, fica um adendo
+            para que para usar um simbolo como o de copyright por exemplo, deve-se usar o unicode do caractere o que pode ser encontrado
+            na internet. -->
+        <footer>
+            <img src="logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>

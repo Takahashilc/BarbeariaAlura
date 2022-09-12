@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> <!-- o meta charset serve para usar os caracteres e aparecerem certo diante de qlqr linguagem que esteja no sistema op. -->
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css"> <!-- Link de um arquivo que serve para limpar as medidas que são implementadas pelo proprio navegador -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Dentro do body nos temos o header para começar a nova página que será desenvolvida, dentro dela temos uma divisão para
+        que nao fique repetitivo varias divisões no CSS é feito com uma classe, temos um h1 que é uma imagem e também uma lista de 
+        itens que junto do comando nav isso o torna como um lugar de navegação da página, o código "a" serve para abrir um link aonde
+        está escrito o li. -->
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Aqui temos o main onde fica a parte mais importante da página, nela temos a criação do formulário através da tag form e dentro da form
+            temos diversas tag diferentes cada um serve para uma coisa, label com input serve para se criar espaços onde serao escritos pelo proprio
+            cliente que está no site, nesse casa temos diversos tipos diferentes de input type e todos eles servem para se ter uma melhor
+            acessibilidade do site tanto para o pc quanto para o celular, cols e rows são colunas e linhas, respectivamente.-->
+        <main class="main-contato">
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <!-- O fieldset serve para se criar como se fosse uma questao objetiva, onde tem como objetivo a pessoa escolher umas das opções
+                    que estão presentes para responder certa pergunta, entao ao inves de se usar um dos h's no fieldset se usa o legend para a
+                    criação de um texto que vai aparecer no site, e também temos aqui a criação do label da mesma forma que foi feito na anterior,
+                    assim como antes temos inputs, name, value (valor).-->
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                <!-- Aqui temos outro fielset porem esse usa a tag select que nada mais é do que uma resposta à pergunta, porem temos as opções
+                    em uma lista com botao funcional. -->
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <!-- Nesse pequeno espaço temos a criação de um checkbox, para um novo label, assim como temos a criação do botao de enviar, que 
+                    será estilizado no css.-->
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+            <!--  A tag table é algo novo que veio junto do HTML5 e que permite que tenha uma tag para a criação de tabelas, entao dentro dela temos
+                como se fosse num codigo normal, o head, body e também tem o foot só que nao foi utilizado dessa vez o único diferencial é que temos 
+                o "t" antes desses. tr é a linha da tabela e o th é a coluna-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+        </footer>
+    </body>
+</html>

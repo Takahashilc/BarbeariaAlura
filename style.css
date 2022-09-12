@@ -1,0 +1,316 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+/* Aqui temos a criação de uma caixa, onde o objetivo é juntar o navegador criado e deixar na mesma
+    posição da imagem, assim fazendo a caixa centralizada em qualquer tamanho de tela, sempre ficará
+    centralizado. */
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+/*CSS para o navegador deixando sua position: absolute, faz com que vc possa mexer o navegador como
+    quiser no site, muito bom para conseguir arrumar a posição desejada.*/
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+/*Permite que o navegador deixe de ser block e passe a ser inline, fazendo com que possa ficar ao lado
+    de uma imagem.*/
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+/*Formatação para deixar os textos do navegador do jeito escolhido.*/
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Utiliza o hover para que se possa ter a animação trocando de cor ao passar o mouse
+ por cima, e como isso deve-se ligar o a(que são os links) e o nav(para que seja somente
+ do navegador) */
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+/* Do mesmo jeito que foi feito no navegador esse é o jeito de se criar um caixa invisivel, no qual
+    vai englobar todas as 3 caixas dos produtos que foram colocadas.*/
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+/*Esse código CSS permite que as caixas dos produtos fiquem um do lado do outro, com seus textos alinhados
+    ao topo, com toda a distancia programada para ficar bonito e organizado na hora de ser entrar no site.*/
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+/* Hover serve para dar um destaque ao passar o mouse por cima do elemento.*/
+.produtos li:hover {
+    border-color: #c78c19;
+}
+
+/* Utiliza o active para mudar a cor da borda enquanto o botao do mouse estiver apertado
+e ele segue a mesma ideia do hover, tem que especificar quem e o que vai mudar ao fazer
+essa ação */
+.produtos li:active {
+    border-color: #088c19;
+}
+
+/* Esse código onde temos o li:hover h2, está mostrando que teremos a fonte do h2 aumentada
+assim que passarmos o mouse por cima */
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+/*Os próximos 3 são formatação básica de tamnho e estilo da fonte para deixar em negrito.*/
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*O footer aqui é um pouco diferente pois temos uma imagem no background ao inves de uma cor
+    é facilmente colocada apenas com o comando url.*/
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+/*Formatação básica de tamanho, cor e margem externa do texto do copyright.*/
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.main-contato {
+    margin: 0 0 0 10px;
+}
+
+form {
+    margin: 40px 0;
+}
+/* Aqui temos a mesma coisa dos outros, o display colocado é para que se tenha um comportamento
+    diferente do que é normalmente obtido, nesse caso o label e o legend são inline e com o 
+    comando vao passar a ser blocks.*/
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+/* A estilização do botão de enviar, com a criação de uma caixa quadrada colorida e com suas bordas
+    arredondadas, assim como a utilização do transition que permite uma passagem mais natural ao
+    passar o mouse por cima do botao.*/
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+/*Há diversos tipos de transform diferente que podem ser utilizados no css, porém neste caso
+    foi utilizado para que no momento em que o mouse passe por cima do botão, temos um  
+    aumento no tamanho e na cor do botão.*/
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* css da página inicial */
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal  {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+
+.beneficios {
+    padding: 3em 0;
+    background:  #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5em;
+}
+/* Pode ser utilizado tbm como last-child ou tbm nth-child() no qual entre parenteses entra o valor 
+onde está localizado o item na tabela a ser destacado.*/
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "🟊";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000 ;
+}
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
+
+
+/* Seletores Avançados do CSS
+    main > p   ->  esse chama o filho direto do main, ou seja, o primeiro p dps do main
+    img + p    -> esse chama o primeiro p após a imagem
+    img ~ p    -> esse chama todos os p's dps da imagem
+    .principal p:not(#missao)   -> esse exclui um p especifico, enquanto muda os outros p 
+    dentro do principal 
+    
+    Temos também
+    .itens:before e o .itens:after esse deve vir em seguido da tag content:"qlqr coisa", 
+    para que se tenha algo escrito ou um unicode, antes ou depois de certa frase ou titulo.
+
+    Cálculo no CSS
+    pode se usar o calc para fazer calculos precisos em width por exemplo
+    width:calc(40% - 26px) e por ai vai.
+    
+    Opacidade nos Elementos
+    No CSS3 podemos colocar a opacidade em tudo quanto é elemento,
+    um exemplo seria colocar uma opacidade nos títulos do site todo, primeiro teria que 
+    mudar a coloração para rgb(0,0,0) padrao de preto, e logo em seguida mudar a tag de
+    rgb para rgba esse a é a opacidade desejada de 0 à 1, entao seria algo como 
+    rgba(0,0,0,0.3) para se ter uma opacidade nos titulos.
+
+    Sombras no CSS
+    box-shadow: X Y Blur Distancia Cor
+    text-shadow X Y Cor
+    box-shadow: inset: 0 0 Blur Cor - sombra interna.
+    */
